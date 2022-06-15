@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html基础</title>
+</head>
+<body>
+
+    <form>
+        <input type="text"><br>
+        <input type="password"><br>
+
+        <input type="radio" name="gender" checked="checked" id="male">
+        <label for="male">男</label>
+        
+        <input type="radio" name="gender" id="female">
+        <label for="female">女</label>
+    </form>
+
+    <h3>无序列表</h3>
+    <ul>
+        <li>咬人猫</li>
+        <li>兔总裁</li>
+        <li>阿叶君</li>
+    </ul>
+
+    <h3>有序列表</h3>
+    <ol>
+        <li>咬人猫</li>
+        <li>兔总裁</li>
+        <li>阿叶君</li>
+    </ol>
+
+    <h3>自定义列表</h3>
+    <dl>
+        <dt>我的老婆们</dt>
+        <dd>咬人猫</dd>
+        <dd>兔总裁</dd>
+        <dd>阿叶君</dd>
+    </dl>
+
+    <style>
+        td {
+             text-align: center;
+        }
+    </style>
+    <table border="2px" width="500px" height="300px" cellspacing="0">
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>李华</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>119</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>123</td>
+        </tr>
+    </table>
+
+    <a href="https://www.baidu.com">
+        <img src="rose.jpg" alt="链接失败!">
+    </a>
+
+    <a href="test.7z">超链接表示下载!</a>
+
+    <!-- 在同一个网站内跳转 类似于相对路径 -->
+    <a href="test2.html">跳转到test2</a>
+    
+    <a href="https://www.baidu.com">这是一个超链接</a>
+
+    <!-- 名字也是可以的(其实就是相对路径) -->
+    <img src="ros.jpg" alt="这是一朵花!" title="这是一朵玫瑰花!">
+    <img src="./rose.jpg" alt="">
+
+    <!-- 绝对路径     此时注意:设置一个边的时候 另一的会等比变换 -->
+    <img src="/Users/cbiltps/Documents/NativeCode/FrontEndCode/test_6_12/rose.jpg" alt="" title="这也是一朵玫瑰花!" width="400">
+
+    <!-- 网络路径 -->
+    <img src="https://img1.baidu.com/it/u=722430420,1974228945&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" alt="">
+</body>
+</html>
