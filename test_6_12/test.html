@@ -7,16 +7,69 @@
     <title>html基础</title>
 </head>
 <body>
+    <div>
+        <span>咬人猫</span>
+        <span>咬人猫</span>
+        <span>咬人猫</span>
+    </div>
+    <div>
+        <span>兔总裁</span>
+        <span>兔总裁</span>
+        <span>兔总裁</span>
+    </div>
+    <div>
+        <span>阿叶君</span>
+        <span>阿叶君</span>
+        <span>阿叶君</span>
+    </div>
 
+
+    <!-- form是一个表单标签 后期的时候会继续提到 就是循序用户提供一些信息然后提交到服务器上 -->
     <form>
+        <!-- 输入框 -->
         <input type="text"><br>
         <input type="password"><br>
 
+        <!--radio就是单选框 
+            name:相同的name属性会只有选一个的效果 也就是二选一的效果 -->
+        <!-- checked 默认选中 -->
         <input type="radio" name="gender" checked="checked" id="male">
+        <!-- 点汉字的时候 也能选中 -->
         <label for="male">男</label>
         
         <input type="radio" name="gender" id="female">
         <label for="female">女</label>
+
+        <br>
+
+        <!-- 多行编辑框 -->
+        <textarea cols="30" rows="10">
+
+        </textarea>
+
+        <!-- select实现下拉菜单 selected可以实现默认选项  -->
+        <select>
+            <option>-- 请选择年份 --</option>
+            <option>2000</option>
+            <option selected="selected">2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+        </select>
+
+        <!-- 复选框 -->
+        <input type="checkbox"> 吃饭
+        <input type="checkbox"> 睡觉
+        <input type="checkbox"> 做作业
+        <!-- checked就是默认选项 -->
+        <input type="checkbox" checked="checked"> 打游戏
+
+        <!-- 按钮 onclick是js代码 就是点击按钮之后出现的效果 -->
+        <input type="button" value="这是按钮" onclick="alert('hello')">
+        <button onclick="alert('hello')">这是按钮</button>
+
+        <!-- 选择文件可以在打开本地磁盘并选择文件 然后 可以进行上传等操作 -->
+        <input type="file">
     </form>
 
     <h3>无序列表</h3>
@@ -46,6 +99,8 @@
              text-align: center;
         }
     </style>
+
+    <!-- border 出现边框 -->
     <table border="2px" width="500px" height="300px" cellspacing="0">
         <tr>
             <th>姓名</th>
