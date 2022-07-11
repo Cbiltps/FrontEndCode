@@ -5,14 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <link rel="stylesheet" href="test.css">
+    <!-- <link rel="stylesheet" href="test.css"> -->
 </head>
 <body>
+    <style>
+
+        /* ==================================================================== */
+        
+        
+        /* 选择器的学习 */
+
+
+        /* 类名选择器 */
+        /* .red {
+            color: red;
+        } */
+
+        /* id选择器 */
+        /* #green {
+            color: green;
+        } */
+
+        /* 通配符选择器 可以取消默样式: 浏览器有一些默认的样式, 开发的时候不能基于它写代码, 因为其他的浏览器不一样!
+        而且这里有经典的代码! */
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+        /* 后代选择器 */
+        /* ul li {
+            color: red;
+        } */
+
+        /* 子选择器和后代选择器有一点不一样 后代可以可以包含孙子 */
+        /* ol li {
+            color: pink;
+        } */
+
+        /* 并集选择器 */
+        /* ul>li, ol>li {
+            color: blueviolet;
+        } */
+
+        /* dvi {
+            color: black;
+        } */
+
+        /* 伪类选择器: 鼠标选择的时候会应用这个样式 */
+        /* div:hover {
+            color: red;
+        } */
+
+        /* 伪类选择器: 鼠标按下的时候会应用这个样式 */
+        /* div:active {
+            color: blue;
+        } */
 
 
 
+        /* ========================================================== */
 
-    <p>hello welcome!</p>
+
+        /* 字体的样式 */
+
+
+        .one {
+            /* 汉字粗细 */
+            font-weight: 900;
+            /* 字体大小 */
+            font-size: 60px;
+            /* 汉字类型 */
+            font-family: '微软雅黑';
+        }
+
+        .two {
+            font-size: 1px;
+            font-family: '宋体';
+        }
+
+        em {
+            /* 通常就是把倾斜的字体变成正常的 用的不是非常的多 */
+            font-style: normal;
+        }
+
+
+        /* ============================================== */
+        
+        
+        /* 文本框的样式 */
+
+        /* 1:颜色 看笔记
+           2:对齐 */
+        .one {
+            text-align: left;
+        }
+
+        .two {
+            text-align: center;
+        }
+
+        .three {
+            text-align: right;
+        }
+
+
+
+    </style>
+
+    <div class="one">
+        这是一段话
+    </div>
+    <div class="two">
+        这是一段话
+    </div>
+    <div class="three">
+        这是一段话
+    </div>
+
+    <!-- <em>这是一个倾斜标签</em>
+
+    <div class="one">
+        这是一行字
+    </div>
+
+    <div class="two">
+        这是另一行字
+    </div> -->
+
+    <!-- <div>这是一个div</div>
+
+    <ul>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ul>
+
+    <ol>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ol>
+
+    <p class="red">789</p>
+    <p class="red">456</p>
+    <p id="green">123</p>
+
+
+
+    <p>hello welcome!</p> -->
 
     <!-- 内联样式 -->
     <!-- <p style="color: red">
