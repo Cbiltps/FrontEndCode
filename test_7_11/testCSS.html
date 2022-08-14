@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+</head>
+<body>
+    <style>
+        a1 {
+            /* 设置文本的装饰 去除下划线 */
+            text-decoration: none;
+        }
+
+        p1 {
+            /* 设置文本的缩进 */
+            text-indent: 2em;
+        }
+        
+        .two1 {
+            /* 设置行高 */
+            line-height: 50px;
+        }
+
+        div2 {
+            width: 1000px;
+            height: 650px;
+            font-size: 20px;
+            background-color: rgb(50,44,80);
+
+            background-image: url(./rose.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            
+            color: black;
+
+            text-align: center;
+            line-height: 650px;
+        }
+
+        /* body {
+            
+            background-color: brown;
+        } */
+
+        div3 {
+            /* 如果元素的高度为150, 设置元素的行高为150, 可以达到文本垂直居中的效果 */
+            /* width: 200px;
+            height: 150px; */
+
+            /* 设置背景图片的时候, 如果行高和宽度变大之后, 背景重复了很多次, 这个叫平铺 */
+            width: 1000px;
+            height: 650px;
+            
+            /* 设置平铺 */
+            background-repeat: no-repeat;
+        
+
+
+            font-size: 20px;
+            background-color: blueviolet;
+
+            /* 是背景颜色和父级背景颜色一样 有穿透效果 */
+            /* background-color: transparent; */
+
+            /* 设置背景图片的位置 支持px 百分比 单词的形式 */
+            background-position: center center;
+
+            /* 设置背景图片的大小 */
+            background-size: contain;
+
+            background-image: url(./rose.jpg);
+            text-align: center;
+            line-height: 650px;
+
+            /* 设置圆角矩形 
+            这里的px长度就是边角内切圆的半径*/
+            border-radius: 10px;
+            /* border-radius: 50%; */
+        }
+
+
+        a1 {
+            height: 100px;
+            width: 100px;
+
+            /* 把行内元素设置为块级元素 */
+            display: block;
+
+            /* 隐藏元素 */
+            display: none;
+        }
+
+        div1 {
+            width: 200px;
+            height: 100px;
+            /* 实行黑边框 */
+            border: 2px black solid;
+
+            /* 添加边框会撑大元素, 使用box-sizing可以解决 */
+            box-sizing: border-box;
+
+            /* 设置内边距为10px */
+            padding: 10px;
+        }
+
+        .one1 {
+            /* 设置外边距为10px, 表示的事元素和元素的距离 */
+            margin-bottom: 10px;
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .two1 {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+
+            /* 这是一个特殊的操作 设置元素水平居中 */
+            margin: 0 auto;
+        }
+
+        .parent {
+            /* width : 100% 让当前元素的宽度和他的父元素一样宽 */
+            width: 100%;
+            height: 200px;
+            background-color: grey;
+
+            /* 设置弹性布局 把元素横着放(水平放置) */
+            display: flex;
+            /* 水平方向的排列方式 */
+            justify-content: space-around;
+            /* 垂直方向的排列方式 */
+            align-items: center;
+        }
+
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+
+    <div class="parent">
+        <div class="one">1</div>
+        <div class="one">2</div>
+        <div class="one">3</div>
+        <div class="one">4</div>
+        <div class="one">5</div>
+    </div>
+
+    <!-- <div class="one">
+        <div class="two">
+            hello
+        </div>
+    </div> -->
+
+    <!-- <div class="one">
+        这是一段话
+    </div>
+
+    <div>
+        这是一段话
+    </div> -->
+
+    <!-- <a href="#">这是一个链接</a>
+    <a href="#">这是一个链接</a>
+    <a href="#">这是一个链接</a> -->
+
+
+    <!-- <div class="one">
+        上一行
+    </div>
+    <div class="two">
+        中间行
+    </div>
+    <div class="three">
+        下一行
+    </div> -->
+<!-- 
+    <p>这是一段很长的一段话 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugit perferendis ipsa. Hic natus asperiores officia amet ab placeat eos ducimus. Consequuntur modi debitis est unde nemo tempore enim quis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum nobis, asperiores numquam ipsa magnam, dolore eius soluta est consequatur distinctio aliquam tempore. Dicta, quasi commodi autem maiores odio dolorum.
+    </p>
+
+    <a href="#">这是一个超链接</a> -->
+</body>
+</html>
