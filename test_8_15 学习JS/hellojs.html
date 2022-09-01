@@ -9,7 +9,20 @@
 <body>
 
     <script>
-        console.log('hello log');
+        // console.log('hello log');
+
+        let num = 10;
+        function hello2 (x) {
+            let num = 20;
+            function hello () {
+                // 如果想在{}里面使用let num = 10;这个变量的话, 就给hello2添加一个形参, 把let num = 10;作为实参传过来就可以
+                console.log(x);
+            }
+
+            hello();
+        }
+
+        hello2(num);
     </script>
 
     <!-- <button onclick="alert('hello')">这是一个按钮</button> -->
